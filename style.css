@@ -1,0 +1,67 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth; /* scroll doux */
+  font-family: Arial, sans-serif;
+}
+
+/* Chaque section prend toute la hauteur de l'écran */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Couleurs différentes pour distinguer les blocs */
+#home {
+  background: #2e7d32; /* vert foncé */
+  color: white;
+}
+
+#about {
+  background: #f9fdf9; /* blanc cassé */
+  color: #333;
+}
+
+#projects {
+  background: #e8f5e9; /* vert clair */
+  color: #333;
+}
+
+#contact {
+  background: #c8e6c9; /* vert encore plus clair */
+  color: #333;
+}
+
+/* Header fixé en haut */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(46, 125, 50, 0.9);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
