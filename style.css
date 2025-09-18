@@ -35,7 +35,7 @@ html, body {
   left: 0;
   width: 40%;
   height: 100%;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(15px);
   z-index: 1;
 }
 
