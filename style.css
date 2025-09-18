@@ -10,17 +10,57 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-#home {
-    background-image: url(img/mountains2.jpg);
-    background-size: cover;
-    background-position: center;
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/mountains2.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.blur-half {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  z-index: 1;
+}
+
+.text-net {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-100%, -50%);
+  font-size: 11rem;
+  z-index: 2;
+  color: transparent; 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  background-image: url("img/mountains2.jpg");
+  background-size: 100vw 100vh;
+  background-position: 23% 50%; /* Valeur relou à bouger à la moindre modif */
+}
+
+.text-blanc {
+  position: absolute;
+  top: 50%;
+  left: 40%; /* Placement de la bordure */ 
+  transform: translate(-0%, -50%);
+  font-size: 11rem;
+  color: white;
+  z-index: 2;
+  text-shadow: 0 0 15px rgba(0,0,0,0.7);
 }
