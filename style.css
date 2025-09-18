@@ -10,6 +10,42 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
+header {
+  position: fixed;      /* fixe la nav à l’écran */
+  top: 0;               /* en haut de la page */
+  left: 0;
+  width: 100%;          /* prend toute la largeur */
+  background-color: rgba(255, 255, 255, 0.9); /* légèrement translucide */
+  z-index: 100;         /* toujours devant les autres éléments */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optionnel, pour relief */
+}
+
+header nav {
+  display: flex;
+  justify-content: center;  /* centre les liens */
+  padding: 1rem 0;
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #2a7f62; /* couleur au survol */
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
 .hero {
   position: relative;
   width: 100%;
