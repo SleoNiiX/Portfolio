@@ -23,7 +23,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("img/mountains2.jpg");
+  background-image: url("img/mountains.jpg");
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -35,13 +35,13 @@ html, body {
   left: 0;
   width: 40%;
   height: 100%;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(30px);
   z-index: 1;
 }
 
 .text-net {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 40%;
   transform: translate(-100%, -50%);
   font-size: 11rem;
@@ -49,14 +49,14 @@ html, body {
   color: transparent; 
   -webkit-background-clip: text; 
   background-clip: text; 
-  background-image: url("img/mountains2.jpg");
+  background-image: url("img/mountains.jpg");
   background-size: 100vw 100vh;
-  background-position: 23% 50%; /* Valeur relou à bouger à la moindre modif */
+  background-position: 23% 45%; /* Valeur relou à bouger à la moindre modif */
 }
 
 .text-blanc {
   position: absolute;
-  top: 50%;
+  top: 57%;
   left: 40%; /* Placement de la bordure */ 
   transform: translate(-0%, -50%);
   font-size: 11rem;
