@@ -10,20 +10,46 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
+/*
+p {
+  z-index: 100;
+}
+*/
+
 header {
-  position: fixed;      /* fixe la nav à l’écran */
-  top: 0;               /* en haut de la page */
+  position: fixed;      
+  top: 0;              
   left: 0;
-  width: 100%;          /* prend toute la largeur */
-  background-color: rgba(255, 255, 255, 0.9); /* légèrement translucide */
-  z-index: 100;         /* toujours devant les autres éléments */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optionnel, pour relief */
+  width: 100%;        
+  background-color: rgba(255, 255, 255, 0.9); 
+  z-index: 100;      
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
 
 header nav {
   display: flex;
-  justify-content: center;  /* centre les liens */
+  justify-content: space-between;
+  align-items: center;  
   padding: 1rem 0;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column; /* deux lignes */
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem; /* espace régulier entre les liens */
+}
+
+.projects a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
 }
 
 header nav a {
@@ -44,6 +70,10 @@ section {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+}
+
+#about {
+  background-color: #2a7f62;
 }
 
 .hero {
@@ -75,7 +105,7 @@ section {
   z-index: 1;
 }
 
-.text-net {
+.titre-net {
   position: absolute;
   top: 43%;
   left: 40%;
@@ -90,7 +120,7 @@ section {
   background-position: 23% 45%; /* Valeur relou à bouger à la moindre modif */
 }
 
-.text-blanc {
+.titre-blanc {
   position: absolute;
   top: 57%;
   left: 40%; /* Placement de la bordure */ 
