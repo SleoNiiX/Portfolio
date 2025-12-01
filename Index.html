@@ -2,63 +2,102 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+  <title>Portfolio - Anthony</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <div class="brand">
-        <a href="Index.html">
-          <span class="nom1">Anthony</span><br>
-          <span class="nom2">Cardoso moreira</span>
-        </a>
-      </div>
-      
-      <div class="links">
-        <a href="#home">Accueil</a>
-        <a href="#about">Profil</a>
-        <a href="#skills">Compétences</a>
-        <a href="#contact">Contact</a>  
-      </div>
-      
-      <div class="projects">
-        <a href="Project.html">Mes projets</a>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="background"></div>
-      <div class="blur-half"></div>
+<body>
+
+  <nav>
+    <a href="index.html">
+        <span>Anthony</span><br>
+        <span>Cardoso Moreira</span>
+    </a>
+    <div class="nav-center">
+      <a href="#presentation">Présentation</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="projects.html">Mes projets</a>
+  </nav>
+
+  <section id="hero">
+    <h1>Bienvenue sur mon Portfolio</h1>
+  </section>
+
+  <section id="presentation">
+    
+    <div class="content-block">
+        <h2>Présentation</h2>
+      <p>
+        Je m'appelle Anthony, étudiant en BUT Informatique à l'IUT de Villeneuve-d'Ascq.
+        Passionné par le développement, la créativité et le progrès constant, je construis
+        des projets pour apprendre, créer et avoir un impact positif. <br>
+        Actuellement je recherche un stage dans le developpement.
+      </p>
+    </div>
+    
+    
+    <div class="interets-grid">
+        <h2>Centres d'intérêt</h2>
+        <div class="card">
+            <h3>🎮 Jeux vidéo</h3>
+            <p>Minecraft, LoL… créativité, stratégie et exploration.</p>
+        </div>
+        <div class="card">
+            <h3>💪 Callisthénie</h3>
+            <p>Progresser un peu chaque jour, même sans matériel.</p>
+        </div>
+        <div class="card">
+            <h3>🥾 Randonnée</h3>
+            <p>Explorer, respirer, observer. Toujours plus loin.</p>
+        </div>
+        <div class="card">
+            <h3>🎨 Animés & mangas</h3>
+            <p>Inspiration visuelle, storytelling et imagination.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="parcours">
+    <h2>Parcours scolaire</h2>
+    <div class="content-block">
+      <p>• BUT Informatique - IUT de Villeneuve-d'Ascq</p>
+      <p>• Spécialité NSI au lycée</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Compétences</h2>
+    <div class="skills">
+      <div>
+        <h3>Hard skills</h3>
+        <ul class="skills-list">
+          <li>HTML / CSS</li>
+          <li>Python</li>
+          <li>Développement Linux</li>
+          <li>Git / GitHub</li>
+        </ul>
+      </div>
 
       <div>
-        <h1 class="titre-net">MON</h1>
-        <h1 class="titre-blanc">PORTFOLIO</h1>
+        <h3>Soft skills</h3>
+        <ul class="skills-list">
+          <li>Curiosité</li>
+          <li>Autonomie</li>
+          <li>Créativité</li>
+          <li>Résolution de problèmes</li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about">
-      <h2>Salut !</h2>
-      <br><p>Je suis Anthony, étudiant en informatique</p>
-      <br><p>Pour moi, développer ce n'est pas seulement écrire des lignes : c'est créer, expérimenter et bâtir des projets qui reflètent mes valeurs.</p>
-      <br><p>Curieux, polyvalent et passionné, j'aime apprendre et je cherche toujours à donner du sens à ce que je crée.</p>
-      <br><p>Passionné par les voyages, la randonnée et les mangas, je puise inspiration et idées dans tout ce qui m'entoure.</p>
-    </section>
+  <footer id="contact">
+    <p>Mail : cardosomoreira.anthony@gmail.com</p>
+    <p>GitHub : <a href="https://github.com/SleoNiiX">SleoNiiX</a></p>
+    <p>© Anthony - 2025</p>
+  </footer>
 
-    <section id="paths">
-      <h2>Paths</h2>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-    </section>
-    
-    <footer id="contact">
-      <p>&copy; 2025 Anthony Cardoso Moreira</p>
-    </footer>
-  </main>
 </body>
 </html>
