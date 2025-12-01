@@ -65,6 +65,7 @@ section {
   font-size: 1.2rem;
 }
 
+/* à changer pour section plus tard ? */
 #presentation {
     display: flex;
     flex-direction: column;
@@ -129,8 +130,41 @@ section {
 }
 
 footer {
-  text-align: center;
-  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
   background: #081c15;
   color: #95d5b2;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-center a {
+  color: #95d5b2;
+  text-decoration: none;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.footer-center a:hover {
+  color: #52b788;
+}
+
+.footer-right a {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.footer-right a:hover svg {
+  fill: #52b788;
 }
