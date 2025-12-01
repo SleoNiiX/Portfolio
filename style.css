@@ -71,7 +71,12 @@ section {
     justify-content: space-around;
 }
 
-.interets-grid div {
+.interets-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.interets-grid .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 30px;
