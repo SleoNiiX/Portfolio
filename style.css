@@ -130,3 +130,10 @@ section {
   z-index: 2;
   text-shadow: 0 0 15px rgba(0,0,0,0.7);
 }
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #abbaba;
+  color: #000;
+}
