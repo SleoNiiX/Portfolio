@@ -71,6 +71,24 @@ section {
     justify-content: space-around;
 }
 
+.btn-cv {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #52b788;
+  color: #0d0f0e;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.btn-cv:hover {
+  background-color: #95d5b2;
+  transform: translateY(-3px);
+}
+
 .interets-grid {
   display: flex;
   flex-direction: column;
