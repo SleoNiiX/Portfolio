@@ -66,9 +66,14 @@
 
   <section id="parcours">
     <h2>Parcours scolaire</h2>
-    <div class="content-block">
-      <p>• BUT Informatique - IUT de Villeneuve-d'Ascq</p>
-      <p>• Spécialité NSI au lycée</p>
+    <div class="slider-container">
+      <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+      <div class="card-slide" id="slide">
+        <!-- Contenu du slide par JS -->
+      </div>
+
+      <button class="arrow right" onclick="nextSlide()">&#10095;</button>
     </div>
   </section>
 
@@ -123,5 +128,7 @@
       </a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
