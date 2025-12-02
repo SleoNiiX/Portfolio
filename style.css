@@ -118,6 +118,7 @@ section {
 #parcours {
   display: flex;
   flex-direction: column;
+  justify-content: center; /* à changer plus tard avec un truc qui comble le vide (une image ?) */
   align-items: center;
   gap: 20px;
 }
@@ -166,18 +167,43 @@ section {
   font-size: 3rem;
 }
 
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .skills {
   display: flex;
+  justify-content: space-around;
   gap: 80px;
+  margin-top: 30px;
 }
 
-.skills-list {
+.skills-column {
+  text-align: left; 
+}
+
+.skills-column h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.skills-column ul {
   list-style: none;
+  padding: 0;
 }
 
-.skills-list li::before {
-  content: "• ";
-  color: #52b788;
+.skills-column ul li {
+  margin-bottom: 6px;
+}
+
+.skills-column ul li::before {
+  content: "\276F";
+  padding-right: 10px;
 }
 
 footer {
