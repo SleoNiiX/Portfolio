@@ -14,9 +14,27 @@
     </a>
 
     <div class="nav-center">
-      <a href="#BUT2">BUT 2</a>
-      <a href="#BUT1">BUT1</a>
-      <a href="#contact">Contact</a>
+      <div class="dropdown">
+        <a href="#BUT2">BUT 2</a>
+        <div class="dropdown-menu">
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#2.02">Projet 2.02</a>
+          <a href="#2.03">Projet 2.03</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#BUT1">BUT 1</a>
+        <div class="dropdown-menu">
+          <a href="#1.01">Projet 1.01</a>
+          <a href="#1.03">Projet 1.03</a>
+          <a href="#VivreOuSurvivre">VivreOuSurvivre</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#contact">Contact</a>
+      </div>
     </div>
 
     <a href="projects.html">Mes projets</a>
@@ -26,8 +44,56 @@
     <h1>Mes projets</h1>
   </section>
 
+  <div id="BUT2">
+    <section id="Portfolio" class="project-card">
+      <div class="flip-container" onclick="toggleFlip(this)">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="img/portfolio.png" alt="Portfolio">
+          </div>
+
+          <div class="flip-back">
+            <div class="skills-column">
+              <h3>Compétences techniques</h3>
+              <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>Design Web</li>
+                <li>Git / GitHub</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+
+            <div class="skills-column">
+              <h3>Savoir-être</h3>
+              <ul>
+                <li>Autonomie</li>
+                <li>Créativité</li>
+                <li>Curiosité</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3>Portfolio</h3>
+
+        <p class="description">
+          Création d'un <b>portfolio personnel</b> présentant mon parcours, mes projets et mes compétences.
+          Le site a été conçu pour être simple, rapide et intuitif, avec une mise en page épurée et un design léger.
+          J'y ai intégré mes expériences, mes projets scolaires et personnels, ainsi que mes objectifs d'évolution.
+          L'objectif était d'avoir une base professionnelle pour montrer mon travail et suivre mes progrès dans le temps.
+        </p>
+
+        <a class="project-link" href="https://github.com/SleoNiiX/Portfolio" target="_blank">
+          Voir le projet →
+        </a>
+      </div>
+    </section>
+  </div>
+
   <div id="BUT1">
-    <section id="1.02" class="project-card">
+    <section id="VivreOuSurvivre" class="project-card">
       <div class="flip-container" onclick="toggleFlip(this)">
         <div class="flip-inner">
           <div class="flip-front">
@@ -82,7 +148,7 @@
 
   <footer id="contact">
     <div class="footer-left">
-      © Anthony - 2025
+      © Anthony Cardoso Moreira - 2025
     </div>
 
     <div class="footer-center">
