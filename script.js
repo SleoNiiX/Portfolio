@@ -42,3 +42,7 @@ function nextSlide() {
 }
 
 showSlide(currentIndex);
+
+function toggleFlip(card) {
+  card.classList.toggle('flip');
+}

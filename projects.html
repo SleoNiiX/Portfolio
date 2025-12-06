@@ -7,7 +7,6 @@
 </head>
 
 <body>
-
   <nav>
     <a href="https://sleoniix.github.io/Portfolio/">
       <span>Anthony</span><br>
@@ -15,8 +14,8 @@
     </a>
 
     <div class="nav-center">
-      <a href="#p1">Projet 1</a>
-      <a href="#p2">Projet 2</a>
+      <a href="#BUT2">BUT 2</a>
+      <a href="#BUT1">BUT1</a>
       <a href="#contact">Contact</a>
     </div>
 
@@ -27,21 +26,59 @@
     <h1>Mes projets</h1>
   </section>
 
-  <section id="p1">
-    <h2>Projet 1 - Nom du projet</h2>
-    <div class="content-block">
-      <p>Description rapide du projet.</p>
-      <p><strong>Ce que ça m'a apporté :</strong> organisation, logique, compréhension d'un concept...</p>
-    </div>
-  </section>
+  <div id="BUT1">
+    <section id="1.02" class="project-card">
+      <div class="flip-container" onclick="toggleFlip(this)">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="img/vivreOuSurvivre.png" alt="VivreOuSurvivre">
+          </div>
 
-  <section id="p2">
-    <h2>Projet 2 - Nom du projet</h2>
-    <div class="content-block">
-      <p>Description du projet.</p>
-      <p><strong>Apports :</strong> nouvelle techno, gestion du temps, etc.</p>
-    </div>
-  </section>
+          <div class="flip-back">
+            <div class="skills-column">
+              <h3>Compétences techniques</h3>
+              <ul>
+                <li>POO en Java</li>
+                <li>Algorithmique de base</li>
+                <li>GitHub</li>
+                <li>Tests et validation</li>
+              </ul>
+            </div>
+            
+            <div class="skills-column">
+              <h3>Savoir-être</h3>
+              <ul>
+                <li>Travail d'équipe</li>
+                <li>Créativité pédagogique</li>
+                <li>Vulgarisation d'un sujet</li>
+                <li>Gestion de projet</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-content">
+        <h3>Jeu Ludo-Pédagogique</h3>
+
+        <p class="description">
+          <b>VivreOuSurvivre</b> est un jeu ludo-pédagogique conçu pour initier les enfants aux bases des algorithmes de manière simple et amusante.
+          Le joueur évolue sur un plateau dont la carte est générée aléatoirement à chaque partie, avec pour objectif d'atteindre différents drapeaux tout en évitant les obstacles.
+          Pour y parvenir, il doit suivre une suite d'instructions, ce qui l'amène à raisonner comme un programmeur. 
+          Codé en Java, le jeu s'affiche dans le terminal et mise sur une interface épurée pour se concentrer sur la logique.
+          Chaque réussite est comptabilisée, encourageant les joueurs à optimiser leurs parcours. La rejouabilité est assurée par la diversité des cartes, rendant chaque partie unique. 
+          Le jeu permet ainsi d'apprendre par l'expérimentation, dans un cadre ludique et stimulant. À la fin du projet, nous avons organisé une session de test avec des étudiants,
+          qui nous ont permis d'évaluer l'efficacité pédagogique du jeu et d'enrichir sa conception. 
+          <b>VivreOuSurvivre</b> montre qu'il est possible de rendre l'apprentissage des algorithmes accessible dès le plus jeune âge.
+        </p>
+
+        <a class="project-link" href="https://github.com/xylin-dev/VivreOuSurvivre.git" target="_blank">
+          Voir le projet →
+        </a>
+      </div>
+    </section>
+  </div>
+
 
   <footer id="contact">
     <div class="footer-left">
@@ -69,5 +106,7 @@
       </a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
